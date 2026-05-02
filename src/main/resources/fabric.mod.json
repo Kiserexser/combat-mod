@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "combatmod",
+  "version": "${version}",
+  "name": "Combat Mod",
+  "description": "Hitbox 1.8x, reach 3 blocks, enemy circles.",
+  "authors": ["YourName"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.combatmod.CombatMod"],
+    "client": ["com.example.combatmod.CombatModClient"]
+  },
+  "mixins": [
+    "combatmod.mixins.json",
+    "combatmod.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  }
+}
